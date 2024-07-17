@@ -1,0 +1,9 @@
+#/root/.bash_profile
+#!/bin/bash
+PATH=$PATH:$HOME/bin
+MONGOPASS=password
+export PATH
+export MONGOPASS
+alias mongoconn='mongo -u dbadmin -p $MONGOPASS --authenticationDatabase admin'
+alias mongostat='mongostat -u dbadmin -p $MONGOPASS --authenticationDatabase admin'
+alias mongotop='mongotop -u dbadmin -p $MONGOPASS --authenticationDatabase admin'
